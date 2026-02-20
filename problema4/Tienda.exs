@@ -21,6 +21,8 @@ defmodule Tienda do
   end
 
   defp generar_mensaje(valor_final, valor_descuento) do
+
+    #valor_descuento = valor_descuento |>
     "El precio del producto con descuento del #{valor_descuento}% es #{valor_final}"
 
   end
