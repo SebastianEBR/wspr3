@@ -10,10 +10,10 @@ defmodule Academia do
     |> Util.ingresar(:entero)
 
     intentos = "¿cuantos intentos fallidos llevas?"
-    |> ingresar(:entero)
+    |> Util.ingresar(:entero)
 
 
-    validarIngreso(nombreUsuario, validarEdad(edadUsuario), validarcredenciales(credenciales), validarIntentos(intentos))
+    validar_ingreso(nombreUsuario, validarEdad(edadUsuario), validarcredenciales(credenciales), validarIntentos(intentos))
     |> Util.mostrar_mensaje()
     end
 
@@ -23,6 +23,15 @@ defmodule Academia do
           credenciales == 1 -> true
 
           true -> false
+        end
+        validacion
+    end
+
+    defp validarIntentos(intentos) do
+      validacion =
+        cond do
+          intentos > 3 -> false
+          true -> true
         end
         validacion
     end
@@ -38,17 +47,13 @@ defmodule Academia do
 
     end
 
-    defp validarIngreso(nombreUsuario, edadUsuario, credenciales) do
-
-      mensaje =
-        cond do
-          nombreUsuario == "Sebas" && validarEdad(edadUsuario) && validarcredenciales(credenciales)  -> {:ok, "ingreso correcto"}
-
-          true -> {:error, "ingreso denegado"}
-
-        end
-        mensaje
+    defp validar_ingreso(nombre, edad_valida, credenciales_validas, intentos_validos) do
+    if edad_valida and credenciales_validas and intentos_validos do
+      {:ok, "#{nombre} tiene Ingreso correcto"}
+    else
+      {:error, "#{nombre} tiene Ingreso denegado"}
     end
+  end
 end
 
 
