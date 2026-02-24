@@ -9,9 +9,11 @@ defmodule Academia do
     credenciales = "¿Tiene credenciales, (1=SI, 2=NO)?"
     |> Util.ingresar(:entero)
 
+    intentos = "¿cuantos intentos fallidos llevas?"
+    |> ingresar(:entero)
 
 
-    validarIngreso(nombreUsuario, validarEdad(edadUsuario), validarcredenciales(credenciales))
+    validarIngreso(nombreUsuario, validarEdad(edadUsuario), validarcredenciales(credenciales), validarIntentos(intentos))
     |> Util.mostrar_mensaje()
     end
 

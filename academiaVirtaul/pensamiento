@@ -1,0 +1,13 @@
+¿Qué se pide finalmente?
+programa para gestionar proceso de validación de acceso
+
+¿Qué info es relevante?
+nombreUsuario
+edadUsauario
+¿posee credenciales?
+numero de intentos fallidos registrados previamente
+
+¿Qué se puede reutilizar?
+del util.ex:
+
+ingresar
