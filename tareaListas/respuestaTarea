@@ -1,0 +1,19 @@
+En Elixir, el operador | se llama cons operator y se utiliza para construir listas separando el primer elemento del resto de la lista.
+
+Ejemplo:
+
+[primer elemento | resto de elementos]
+
+Entonces si tenemos
+
+lista = [1, 2, 3, 4]
+
+[primero | resto] = lista
+
+IO.puts(primero)  # 1
+IO.inspect(resto)  # [2, 3, 4]
+
+También se puede usar para construir listas de manera eficiente:
+
+nueva_lista = [0 | lista]
+IO.inspect(nueva_lista)  # [0, 1, 2, 3, 4]
