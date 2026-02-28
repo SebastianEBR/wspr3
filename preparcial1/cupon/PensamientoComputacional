@@ -1,0 +1,31 @@
+ABSTRACCION
+Que se solicita finalmente?
+    Validar cupon
+
+Que info es relevante dado el problema?
+    cupon
+    condiciones
+
+DESCOMPOSICION
+Que acciones se requiren para resolverlo?
+    solicitar dcupon
+    validar:
+        Debe tener al menos 10 caracteres.
+        Debe contener al menos una letra mayúscula.
+        Debe contener al menos un número.
+        No debe contener espacios en blanco.
+
+    Mostrar:
+        {:ok, "Cupón válido"}. Si cumple con todas las condiciones.
+        {:error, "Mensaje de error"}. Indicando qué reglas no se cumplieron.
+        {:error, "El cupón debe tener al menos 10 caracteres y no debe contener espacios"} si fallan varias
+
+
+RECONOCIMIENTO DE PATRONES
+Que se puede reutilizar de otros problemas?
+    Ingresar 
+    Mostrar_mensaje
+
+CODIFICACION
+Como escribo la solucion en elixir?
+    (ya se hará el los otros archivos)

@@ -1,0 +1,32 @@
+ABSTRACCION
+Que se solicita finalmente?
+    Gestionar costos de viaje
+
+Que info es relevante dado el problema?
+    destino
+    cargos adicionales por servicio adicional
+
+DESCOMPOSICION
+Que acciones se requiren para resolverlo?
+    solicitar destino
+    solicitar servicio adicional
+
+    calcular:
+        calcular cargo adicional
+        calucar total
+    
+    generar_mensaje
+
+    Mostrar:
+       total
+       recargo si fue agregado
+
+    
+RECONOCIMIENTO DE PATRONES
+Que se puede reutilizar de otros problemas?
+    Ingresar 
+    Mostrar_mensaje
+
+CODIFICACION
+Como escribo la solucion en elixir?
+    (ya se hará el los otros archivos)

@@ -28,6 +28,10 @@ defmodule ListaDemo do
   def buscar_elemento(lista, elem) do
     Enum.find_index(lista, fn x -> x == elem end)
   end
+
+  def obtener_elemento(lista) do
+    Enum.at(lista, 2)
+  end
 end
 
 # Ejemplo de uso

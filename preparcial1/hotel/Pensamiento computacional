@@ -1,0 +1,33 @@
+ABSTRACCION
+Que se solicita finalmente?
+    Calcular el costo de una reserva
+
+Que info es relevante dado el problema?
+    numero de noches
+    tipo cliente
+    recargo de temporada
+
+DESCOMPOSICION
+Que acciones se requiren para resolverlo?
+    solicitar datos
+    Calcular:
+        El subtotal según el número de noches.
+        Aplicar el descuento correspondiente.
+        Aplicar el recargo si es temporada alta.
+        Calcular el total final.
+        Retornar una tupla con todos estos valores.
+    Mostrar:
+        Tarifa base por noche.
+        Subtotal sin descuentos ni recargos.
+        Valor del descuento.
+        Valor del recargo.
+        Total a pagar.
+
+RECONOCIMIENTO DE PATRONES
+Que se puede reutilizar de otros problemas?
+    Ingresar 
+    Mostrar_mensaje
+
+CODIFICACION
+Como escribo la solucion en elixir?
+    (ya se hará el los otros archivos)
